@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TicketBookingFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="-1.0">
+         <image>
+            <Image url="@../../Downloads/back.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tName" layoutX="118.0" layoutY="98.0" prefHeight="26.0" prefWidth="418.0" />
+      <Label layoutX="32.0" layoutY="102.0" prefHeight="18.0" prefWidth="59.0" text="*Name ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="149.0" text="*Mobile no.">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tNumber" layoutX="119.0" layoutY="145.0" prefHeight="26.0" prefWidth="277.0" promptText="+91xxxxxxxxxx" />
+      <Label layoutX="32.0" layoutY="190.0" prefHeight="18.0" prefWidth="59.0" text="Guide">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <ChoiceBox fx:id="tGuide" layoutX="118.0" layoutY="186.0" prefHeight="25.0" prefWidth="277.0" />
+      <Label layoutX="32.0" layoutY="230.0" prefHeight="18.0" prefWidth="59.0" text="Address">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tAddress" layoutX="118.0" layoutY="226.0" prefHeight="26.0" prefWidth="418.0" />
+      <ButtonBar layoutX="209.0" layoutY="273.0" prefHeight="40.0" prefWidth="166.0" />
+      <TextField fx:id="tEmail" layoutX="119.0" layoutY="269.0" prefHeight="26.0" prefWidth="418.0" />
+      <Label layoutX="32.0" layoutY="272.0" prefHeight="15.0" prefWidth="59.0" text="*E-mail">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="149.0" text="*Adults">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tAdult" layoutX="483.0" layoutY="144.0" prefHeight="18.0" prefWidth="34.0" promptText="No." />
+      <TextField fx:id="tChildern" layoutX="483.0" layoutY="186.0" prefHeight="18.0" prefWidth="34.0" promptText="No." />
+      <Label layoutX="423.0" layoutY="190.0" text="*Children">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="142.0" layoutY="25.0" prefHeight="40.0" prefWidth="347.0" style="-fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 8px; -fx-background-color: gray;" text="Book Ticket" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="tWarning" layoutX="29.0" layoutY="371.0" prefHeight="17.0" prefWidth="391.0" text=".." />
+      <Button fx:id="tBookTicketBtn" layoutX="256.0" layoutY="326.0" mnemonicParsing="false" onAction="#ontBookClick" prefHeight="33.0" prefWidth="120.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" text="Book Ticket">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

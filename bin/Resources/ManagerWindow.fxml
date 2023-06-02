@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1178.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManagerWindowController">
+   <center>
+      <AnchorPane prefHeight="401.0" prefWidth="815.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="379.0" layoutY="14.0" prefHeight="75.0" prefWidth="419.0" text="Manager Window">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="10.0" layoutY="106.0" prefHeight="264.0" prefWidth="214.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="47.0" layoutY="14.0" prefHeight="41.0" prefWidth="119.0" text="Employee Section" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                <Button fx:id="addEmpBtn" alignment="CENTER" layoutX="30.0" layoutY="88.0" mnemonicParsing="false" onAction="#onAddEmpBtnClick" prefHeight="43.0" prefWidth="154.0" text="Add Employee" />
+                <Button fx:id="deleteEmpBtn" layoutX="30.0" layoutY="158.0" mnemonicParsing="false" onAction="#onDeleteEmpBtnClick" prefHeight="43.0" prefWidth="153.0" text="Search &amp; Delete Employee" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="375.0" prefHeight="250.0" prefWidth="204.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="14.0" prefHeight="41.0" prefWidth="119.0" text="Animal Section" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                <Button fx:id="addAnimalBtn" layoutX="26.0" layoutY="72.0" mnemonicParsing="false" onAction="#onAddAnimalBtnClick" prefHeight="43.0" prefWidth="152.0" text="Add animal" />
+                <Button fx:id="deleteAnimalBtn" layoutX="26.0" layoutY="156.0" mnemonicParsing="false" onAction="#onDeleteAnimalBtnClick" prefHeight="43.0" prefWidth="151.0" text="Search &amp; Delete animal" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="224.0" layoutY="106.0" prefHeight="525.0" prefWidth="941.0">
+               <children>
+                  <TableView fx:id="ptable" layoutX="7.0" layoutY="46.0" prefHeight="416.0" prefWidth="428.0">
+                    <columns>
+                      <TableColumn fx:id="pid" prefWidth="107.33332824707031" text="Person Id" />
+                      <TableColumn fx:id="pname" prefWidth="154.66665649414062" text="Name" />
+                        <TableColumn fx:id="pposition" prefWidth="165.33328247070312" text="Position" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="atable" layoutX="483.0" layoutY="45.0" prefHeight="417.0" prefWidth="436.0">
+                    <columns>
+                      <TableColumn fx:id="aid" prefWidth="111.33331298828125" text="Animal Id" />
+                      <TableColumn fx:id="aname" minWidth="0.0" prefWidth="168.66668701171875" text="Name" />
+                        <TableColumn fx:id="apetname" prefWidth="155.33331298828125" text="PetName" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="11.0" prefHeight="34.0" prefWidth="304.0" text="Employees">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="549.0" layoutY="11.0" prefHeight="34.0" prefWidth="304.0" text="Animals">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="semp" layoutX="160.0" layoutY="478.0" mnemonicParsing="false" onAction="#ShowEmployeedata" prefHeight="25.0" prefWidth="121.0" text="Show Employees" />
+                  <Button fx:id="sanim" layoutX="646.0" layoutY="478.0" mnemonicParsing="false" onAction="#ShowAnimalData" prefHeight="25.0" prefWidth="110.0" text="Show Animals" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
